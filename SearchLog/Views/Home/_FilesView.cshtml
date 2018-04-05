@@ -1,0 +1,12 @@
+﻿@model SearchLog.Models.ApplicationModel
+
+    <table class="table">
+            @foreach (var item in Model.Files)
+            {
+                <tr>
+                    <td>
+                        @item
+                    </td>
+                </tr>
+            }
+    </table>

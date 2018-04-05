@@ -1,0 +1,15 @@
+﻿@model List<SearchLog.Models.SearchModel>
+
+
+<table class="table">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <a href="/Results/GetPid?path=@(item.path)&row=@(item.row)&col=@(item.col)" target="_blank">@item.name</a>
+            </td>
+        </tr>
+    }
+</table>
+
+
